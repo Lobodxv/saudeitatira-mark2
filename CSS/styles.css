@@ -1,0 +1,9 @@
+.cabecalho{
+    display: flex;
+    justify-content: center;
+}
+.menu-pc li a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
