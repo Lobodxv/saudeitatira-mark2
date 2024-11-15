@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>MedClinic | Login</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Folha de estilo -->
+    <link rel="stylesheet" href="CSS\login.css"> <!-- Light style -->
+    <link rel="stylesheet" href="CSS\logindark.css"> <!-- Dark style -->
 
-    <!-- Icons Bootstrap -->
-
-    <!-- Folhas de estilo - CSS -->
-    <link rel="stylesheet" href="CSS\login.css"> <!-- Folha de estilo da página -->
-    <link rel="stylesheet" href="CSS\reset.css"> <!-- Folha de reset -->
 </head>
-<body>
-    <div class="container">
-        <h2>Login</h2>
-        <form>
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <a href="index.html" target="_blank"><button>Login</button></a>
-            <p class="forgot-password">Esqueceu a senha? <a href="#">Clique aqui</a></p>
-            <div class="social-login">
-                <button>.</button>
-                <button>.</button>
-            </div> <!-- /. social-login -->
-        </form>
-    </div> <!-- /.container -->
+<body id="body">
+    <div class="containerTop">
+        <div class="toggle-switch" onclick="contrast()">
+            <label class="switch-label">
+                <input type="checkbox" class="checkbox" onclick="contrast()">
+                <span class="slider" id="slider"></span>
+            </label> <!--- /.switch-label -->
+        </div> <!-- /.toggle-switch -->
+        <!-- <div class="imagem"><img src="IMG\logoPrefeitura.png" alt="Logo prefeitura"></div>  -->
+    </div> <!-- /.containerTop -->
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div> <!-- /.background -->
+    <form id="form">  <!-- Tag com script de estilização -->
+        <h3>Login</h3>
+
+        <div class="campo1">
+            <label for="username"><i class="bi bi-person-fill"></i></label>
+            <input class="username" type="text" autocomplete="off" placeholder="Digite seu usuario" id="username" required></a>
+        </div> <!-- /.campo1 -->
+
+        <div class="campo2">
+            <label for="password"><i class="bi bi-lock-fill"></i></label>
+            <input class="password" type="password" autocomplete="off" placeholder="Digite sua senha" id="password" required></a>
+        </div> <!-- /.campo2 -->
+
+        <button id="login" class="login">Entrar</button>
+    </form> <!-- /.form -->
+
+    <script src="JS\login.js"></script> <!-- JavaScript -->
 </body>
 </html>

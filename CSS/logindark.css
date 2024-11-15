@@ -1,0 +1,131 @@
+body.dark {
+  background-color: red;
+}
+
+form.dark, form.dark *, form.dark h3, form.dark label, form.dark input, form.dark::placeholder, 
+form.dark button.login, form.dark button.login::before, form.dark button.login:hover::before, 
+form.dark button.login:hover{transition: .3s ease;}
+
+
+form.dark{
+  height: 520px;
+  width: 400px;
+  background-color: rgba(44, 44, 44, 0.523);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(44, 44, 44, 0.244);
+  box-shadow: 0 0 40px rgb(0, 0, 0);
+  padding: 50px 35px;
+}
+form.dark *{
+  font-family: 'Poppins',sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+form.dark h3{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+form.dark label{
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+}
+form.dark input{
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(72, 71, 71, 0.4);
+  border-radius: 0 3px 3px 0;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+form.dark label{
+    display: flex;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.173);
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+form.dark label i{
+  color: #ffffffdb;
+}
+
+form.dark .campo1:hover > label {
+  color: rgba(255, 255, 255, 0);
+  background-color: #aded4c;
+  transition: .2s ease;
+}
+form.dark .campo1:hover > input {
+  background-color: rgba(195, 195, 195, 0.348);
+  transition: .2s ease;
+}
+form.dark .campo1:hover > ::placeholder {
+  color: rgba(255, 255, 255, 0.800);
+  transition: .2s ease;
+}
+form.dark .campo2:hover > label {
+  color: white;
+  background-color: #aded4c;
+  transition: .2s ease;
+}
+form.dark .campo2:hover > input {
+  background-color: rgba(195, 195, 195, 0.549);
+  transition: .2s ease;
+}
+form.dark .campo2:hover > ::placeholder {
+  color: rgba(255, 255, 255, 0.800);
+  transition: .2s ease;
+}
+
+
+form.dark input::placeholder{
+  color: #ffffff2b;
+}
+form.dark button.login{
+  margin-top: 60px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #ffffff38;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: .2s ease;
+}
+form.dark button.login::before {
+content: '';
+width: 0;
+height: 500%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(40deg);
+background: #aded4c;
+transition: .5s ease;
+display: block;
+z-index: -1;
+}
+
+form.dark button.login:hover::before {
+width: 100%;
+}
+ 

@@ -1,89 +1,247 @@
-body {
-  font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f0f0f0;
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.container {
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 350px;
+
+
+
+/* Estilizações universais */
+form.light, form.light *, form.light h3, form.light label, form.light input, form.light::placeholder, 
+form.light button.login, form.light button.login::before, form.light button.login:hover::before, 
+form.light button.login:hover{transition: .3s ease;}
+
+:root{
+  --verde: #aded4c
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+/* Estilizações universais - fim  */
+
+.toggle-switch {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  z-index: 2;
+  margin-left: 2em;
+  margin-top: 2em;
+  --light: #d8dbe0;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
 }
 
-input[type="text"],
-input[type="password"] {
+.switch-label {
+  position: absolute;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-
-input[type="checkbox"] {
-  margin-right: 5px;
-}
-
-button {
-  background-color: #0d375c;
-  color: #fff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 3px;
+  height: 50px;
+  background-color: var(--dark);
+  border-radius: 25px;
   cursor: pointer;
+  border: 3px solid var(--dark);
+}
+
+.checkbox {
+  position: absolute;
+  display: none;
+}
+
+.slider {
+  position: absolute;
   width: 100%;
-  font-size: 16px;
+  height: 100%;
+  border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-button:hover {
-  background-color: #286090;
+.checkbox:checked ~ .slider {
+  background-color: var(--light);
 }
 
-.forgot-password {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 14px;
-  color: #333;
-}
-
-.forgot-password a {
-  color: #0e3658;
-  text-decoration: none;
-}
-
-.forgot-password a:hover {
-  text-decoration: underline;
-}
-
-.social-login {
-  margin-top: 20px;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  gap: 40px;
-}
-
-.social-login button {
-  background-color: #103d65;
-  color: #fff;
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  font-size: 16px;
+  -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+  box-shadow: inset 12px -4px 0px 0px var(--light);
+  background-color: var(--dark);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.social-login button:hover {
-  background-color: #0c3a63;
+.checkbox:checked ~ .slider::before {
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+  background-color: var(--dark);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
+
+/* Estilização geral do formulário */
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #7cda39,
+        #aded4c
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #1845ad,
+        #23a2f6
+    );
+    right: -30px;
+    bottom: -80px;
+}
+
+/* VERSÃO LIGHT - Formulário */
+body.light{background-color: white;}
+form.light{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(212, 212, 212, 0.420);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.441);
+    padding: 50px 35px;
+}
+form.light *{
+    font-family: 'Poppins',sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form.light h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+div.campo1,.campo2{
+  display:flex;
+  margin-top: 60px;
+}
+
+form.light label{
+    display: flex;
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+form.light label i{
+  color: #000000;
+}
+
+form.light .campo1:hover > label {
+  color: white;
+  background-color: #aded4c;
+  transition: .2s ease;
+}
+form.light .campo1:hover > input {
+  background-color: rgba(195, 195, 195, 0.549);
+  transition: .2s ease;
+}
+form.light .campo1:hover > ::placeholder {
+  color: rgba(0, 0, 0, 0.497);
+  transition: .2s ease;
+}
+form.light .campo2:hover > label {
+  color: white;
+  background-color: #aded4c;
+  transition: .2s ease;
+}
+form.light .campo2:hover > input {
+  background-color: rgba(195, 195, 195, 0.549);
+  transition: .2s ease;
+}
+form.light .campo2:hover > ::placeholder {
+  color: rgba(0, 0, 0, 0.497);
+  transition: .2s ease;
+}
+
+form.light input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(166, 166, 166, 0.807);
+    border-radius: 0 3px 3px 0;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+form.light input::placeholder{
+    color: #f0f0f0;
+}
+form.light button.login{
+    margin-top: 60px;
+    width: 100%;
+    color: #080710;
+    background-color: #ffffff;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .2s ease;
+}
+form.light button.login::before {
+  content: '';
+  width: 0;
+  height: 500%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(40deg);
+  background: #aded4c;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ form.light button.login:hover::before {
+  width: 100%;
+ }
+ 
+ form.light button.login:hover {
+  color: #ffffff;
+  transition: .2s ease;
+ }
+ 
