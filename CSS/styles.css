@@ -1,11 +1,188 @@
-.cabecalho{
+:root{
+    --spanVerde:#94C536;
+    --spanAzul: #016AAE;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #ffffff;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  button {
+    color: #fff;
+  }
+  
+  h2.titulo {
+    font-size: 32px;
+    text-align: center;
+    color: var(--spanAzul);
+  }
+  h2.titulo span {
+    color: var(--spanVerde);
+  }
+  
+  .interface{
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .flex{display: flex;}
+  
+  .backgroundInicio {
+    background-image: url(images/backgroundTopo.png); 
+    background-size: cover;
+  }
+  
+  /* ESTILO DO CABEÇALHO */
+  header {
+    padding: 10px 4%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(178, 178, 178, 0.871) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 2;
+  
+    /* border-bottom: 2px solid var(--spanAzul); */
+  }
+  
+  /*  estilização do container  */
+  header .container i {font-size: 12px;}
+  header .container a{color: white;}
+  header .container a span{font-size: 12px;}
+  header .container a:hover{
+    text-shadow: none;
+    transform: scale(1.06);
+  }
+  header .container > .row div:hover {background-color: var(--spanAzul); cursor: pointer; transition: .2s ease;}
+  /*  /. Estilização do container  */
+  
+  header > .interface {
     display: flex;
-    justify-content: center;
-}
-.menu-pc li a{
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .container a {
+    font-size: 16px;
+  }
+  
+  header div.logo > a {
+    font-family: 'Licorice', cursive;
+    color: var(--spanVerde);
+  }
+  header div.logo a:hover {
+    opacity: 0.7;
+    transition: .2s ease;
+    transform: scale(1.01);
+  }
+  
+  header a {
+    color: #ffffff;
     text-decoration: none;
-    list-style: none;
-    color: black;
-}
-
-.flex {display: flex;}
+    display: inline-block;
+    transition: .2s;
+  }
+  header nav ul li:hover a{
+    color: #ffffff;
+    transform: scale(1.10);
+    text-shadow: 0 0 10px rgb(118, 118, 118);
+  }
+  
+  header nav ul {
+    list-style-type: none;
+  }
+  
+  header nav ul li{
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  header nav ul li {   /* Estilização do botão */
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    background-color: var(--spanAzul);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.454);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  header nav ul li:hover {
+    background-color: var(--spanVerde);
+    box-shadow: 0px 15px 20px rgba(151, 183, 34, 0.329);
+    color: #fff;
+    transform: translateY(-4px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+  
+  /* /. ESTILIZAÇÃO DO CABEÇALHO  */
+  
+  /* Estilização do topo da página */
+  
+  section.topoSite{
+    padding: 60px 4%;
+    height: 80vh;
+  }
+  
+  section.topoSite .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+  }
+  
+  main .btnContato button{
+    padding: 1.3em 3em;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 500;
+      color: #ffffff;
+      background-color: var(--spanAzul);
+      border: none;
+      border-radius: 45px;
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.454);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      outline: none;
+  }
+  main .btnContato button:hover{
+    background-color: var(--spanVerde);
+      box-shadow: 0px 15px 20px rgba(151, 183, 34, 0.329);
+      color: #fff;
+      transform: translateY(-4px);
+  }
+  
+  main .btnContato button:active{
+    transform: translateY(-1px);
+  }
+  
+  .topoSite h1{
+    color: var(--spanVerde);
+    font-size: 40px;
+    line-height: 40px;
+  }
+  
+  .topoSite h1 span{
+    color: var(--spanAzul);
+  }
+  
+  .topoSite .txtTopoSite p {
+    color: #000000;
+    margin: 40px 0;
+  }
+  
+  /* Estilização do topo da página - FIM */
