@@ -43,7 +43,7 @@
   
   /* ESTILO DO CABEÇALHO */
   header {
-    padding: 10px 4%;
+    padding: 10px 0 ;
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(178, 178, 178, 0.871) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 2;
@@ -127,6 +127,14 @@
   
   button:active {
     transform: translateY(-1px);
+  }
+
+  div.row-fitaflex {
+    display: flex;
+    width: 100%;
+  }
+  div.row-fitaflex .fita{
+    width: 100%;
   }
   
   /* /. ESTILIZAÇÃO DO CABEÇALHO  */
