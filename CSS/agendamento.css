@@ -4,17 +4,16 @@
   box-sizing: border-box;
 }
 
-body::before {
-  display: block;
-  content: '';
-  width: 100%;
-  height: 368px;
-  background: #121214;
+:root{
+  --spanVerde:#94C536;
+  --spanAzul: #016AAE;
+  --azulEscuro: #015994;
+  --cinza: rgb(225, 225, 225);
+}
 
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 body, input, select, textarea {
@@ -23,48 +22,129 @@ body, input, select, textarea {
 
 body {
   font-family: 'Poppins', sans-serif;
-
-  background: #e5e5e5;
+  background: #ffffff;
 }
+
+/* ------------------------------------------------------ */
+  /* ESTILO DO CABEÇALHO */
+  header {
+    padding: 10px 0 ;
+    background: rgb(255, 255, 255);
+    z-index: 2;
+  
+    /* border-bottom: 2px solid var(--spanAzul); */
+  }
+  
+  /* -------------------------------------------------------- */
+  /*  estilização do container  */
+  header .container i {font-size: 12px;}
+  header .container a{color: white;}
+  header .container a span{font-size: 12px;}
+  header .container a:hover{
+    text-shadow: none;
+    transform: scale(1.06);
+  }
+  header .container > .row div:hover {background-color: var(--spanAzul); cursor: pointer; transition: .2s ease;}
+  /*  /. Estilização do container  */
+
+
+  /* ---------------------------------- */
+  header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .container a {
+    font-size: 16px;
+  }
+  
+  header div.logo > a {
+    font-family: 'Licorice', cursive;
+    color: var(--spanVerde);
+  }
+  header div.logo a:hover {
+    opacity: 0.7;
+    transition: .2s ease;
+    transform: scale(1.01);
+  }
+  
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+  }
+  header nav ul li:hover a{
+    color: #ffffff;
+    transform: scale(1.10);
+    text-shadow: 0 0 10px rgb(118, 118, 118);
+  }
+  
+  header nav ul {
+    list-style-type: none;
+  }
+  
+  header nav ul li{
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  header nav ul li {   /* Estilização do botão */
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    background-color: var(--spanAzul);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.454);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  header nav ul li:hover {
+    background-color: var(--spanVerde);
+    box-shadow: 0px 15px 20px rgba(151, 183, 34, 0.329);
+    color: #fff;
+    transform: translateY(-4px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+  div.row-fitaflex {
+    display: flex;
+    width: 100%;
+  }
+  div.row-fitaflex .fita{
+    width: 100%;
+  }
+  
+  /* /. ESTILIZAÇÃO DO CABEÇALHO  */
 
 #page {
-  width: 736px;
   margin: auto;
+  margin-top: 30px;
 }
-
-header {
-  width: 319px;
-
-  margin-top: 74px;
-}
-
-header h1 {
-  font-family: 'Archivo', sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 42px;
-  color: white;
-
-  margin-bottom: 24px;
-}
-
-header p {
-  color: #42D3FF;
-  font-weight: 400;
-  line-height: 26px;
+ 
+.titles{
+  padding: 10px;
+  background-color: var(--cinza);
+  border-radius: 10px 10px 0 0;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 50px;
 
-  background: #FAFAFC;
-  margin-top: 38px;
+  background: var(--azulEscuro);
   min-height: 300px;
   padding: 64px;
-
-  border-radius: 8px 8px 0 0;
 }
 
 fieldset {
@@ -75,6 +155,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  color: white;
 }
 
 fieldset legend {
@@ -86,7 +167,7 @@ fieldset legend {
   width: 100%;
 
   padding-bottom: 1rem;
-  border-bottom: 1px solid #e6e6f0;
+  border-bottom: 1px solid #ffffff;
 }
 
 .input-wrapper {
@@ -101,7 +182,7 @@ fieldset legend {
   font-size: 14px;
   line-height: 24px;
 
-  color: #4e4958;
+  color: #ffffff;
 
   margin-bottom: 8px;
 }
@@ -111,15 +192,15 @@ fieldset legend {
 
   font-size: 12px;
   line-height: 20px;
-  color: #6c6a71;
+  color: #ffffff;
 }
 
 .input-wrapper input,
 .input-wrapper textarea,
 .input-wrapper select {
-  background: #FAFAFC;
+  background: #ffffff;
 
-  border: 1px solid #e6e6f0;
+  border: 1px solid #d2d2d2;
   border-radius: 8px;
 
   height: 56px;
@@ -200,7 +281,7 @@ footer {
   display: flex;
   flex-direction: column;
 
-  background: #f0f0f4;
+  background: rgb(225, 225, 225);
 
   height: 136px;
 
@@ -208,25 +289,30 @@ footer {
   margin-bottom: 100px;
 
   border-top: 1px solid #d6d6d6;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 10px 10px;
 }
 
 footer .button {
-  background: #04d361;
+  background: var(--spanVerde);
 
   font-family: 'Archivo', sans-serif;
   font-weight: 600;
   line-height: 26px;
+  font-size: 18px;
   color: #fff;
 
   height: 56px;
 
   border: none;
   border-radius: 8px;
+  transition: .2s ease;
+  cursor: pointer;
 }
 
 footer .button:hover {
-  background: #08b355;
+  background: var(--spanVerde);
+  transform: scale(1.02);
+  transition: transform .2s ease-in-out;
 }
 
 input:invalid {

@@ -41,16 +41,17 @@
     background-size: cover;
   }
   
+  /* ------------------------------------------------------ */
   /* ESTILO DO CABEÇALHO */
   header {
     padding: 10px 0 ;
     background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(178, 178, 178, 0.871) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 2;
   
     /* border-bottom: 2px solid var(--spanAzul); */
   }
   
+  /* -------------------------------------------------------- */
   /*  estilização do container  */
   header .container i {font-size: 12px;}
   header .container a{color: white;}
@@ -61,7 +62,9 @@
   }
   header .container > .row div:hover {background-color: var(--spanAzul); cursor: pointer; transition: .2s ease;}
   /*  /. Estilização do container  */
-  
+
+
+  /* ---------------------------------- */
   header > .interface {
     display: flex;
     align-items: center;
@@ -139,16 +142,18 @@
   
   /* /. ESTILIZAÇÃO DO CABEÇALHO  */
   
+  /* ----------------------------------------------- */
   /* Estilização do topo da página */
   
   section.topoSite{
     padding: 60px 4%;
-    height: 80vh;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   section.topoSite .flex{
-    align-items: center;
-    justify-content: center;
     gap: 90px;
   }
   
@@ -194,3 +199,51 @@
   }
   
   /* Estilização do topo da página - FIM */
+
+  /* -------------------------------------- */
+  /* Seção de Campanhas e Eventos */
+ .campanhas-eventos {
+  padding: 40px 0;
+  background-color: #f7f7f7;
+}
+
+.campanhas-eventos .titulo {
+  font-size: 36px;
+  color: var(--spanVerde);
+  margin-bottom: 40px;
+}
+
+.eventos-lista {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.campanhas-eventos .card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 30%;
+  margin-bottom: 30px;
+  transition: transform .2s;
+}
+
+.campanhas-eventos .card h3 {
+  font-size: 24px;
+  color: #333;
+  padding: 15px;
+}
+
+.campanhas-eventos .card p {
+  font-size: 16px;
+  color: #666;
+  padding: 0 15px 15px;
+  line-height: 1.5;
+}
+
+.campanhas-eventos .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
