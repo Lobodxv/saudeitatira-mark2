@@ -4,6 +4,8 @@
 
 > :construction: Projeto em construção :construction:
 
+Desenvolvido por *Manoel Lobo* e *Rodrigo Teles*
+
 *Objetivo*
 
 Este sistema tem como objetivo facilitar o agendamento de consultas médicas, otimizando o tempo dos pacientes e profissionais da saúde.
