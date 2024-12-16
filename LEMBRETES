@@ -4,3 +4,8 @@
 - Atualizar o erro em todos os menus nas páginas;
 Colocar as tags "<li></li>" dentro das tags "<a></a>", encontradas no "<nav>" em todos os menus.
 De forma que fique nessa ordem: <a><li></li></a>.
+
+
+# PÁGINAS COM SCRIPT DE MODOS DARK E LIGHT
+- Unidades.html
+- Login.html

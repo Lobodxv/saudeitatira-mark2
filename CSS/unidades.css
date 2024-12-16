@@ -73,6 +73,11 @@ span.card-endereco {
   display: none;
 }
 
+
+
+
+/* -------------------------------------------- */
+/* RESPONSIVIDADES */
 @media (max-width: 768px) {
   .menuDesktop {
       display: none;
