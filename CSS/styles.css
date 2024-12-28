@@ -60,7 +60,7 @@
     text-shadow: none;
     transform: scale(1.06);
   }
-  header .container > .row div:hover {background-color: var(--spanAzul); cursor: pointer; transition: .2s ease;}
+  header .container > .row div.clicavel:hover {background-color: var(--spanAzul); cursor: pointer; transition: .2s ease;}
   /*  /. Estilização do container  */
 
 

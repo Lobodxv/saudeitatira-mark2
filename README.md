@@ -12,14 +12,15 @@ Este sistema tem como objetivo facilitar o agendamento de consultas médicas, ot
 
 *Funcionalidades*
 
-- Agendamento online de consultas.
+- Agendamento online de exames, procedimentos, consultas, etc.
+- Processo regulatório da Secretaria de Saúde de Itatira
 - Consulta de horários disponíveis.
 - Confirmação e cancelamento de agendamentos.
 - Relatórios gerenciais
 
 *Tecnologias*
 
-- Front-end: HTML, CSS.
+- Front-end: HTML5, CSS3.
 - Back-end: Javascript.
 - Banco de dados: Firebase.
 

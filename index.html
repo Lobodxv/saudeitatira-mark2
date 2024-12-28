@@ -20,7 +20,6 @@
   <!-- Folhas de estilos - CSS  -->
    <link rel="stylesheet" href="CSS\styles.css"> <!-- Folha de estilos da página - Versão light -->
 
-
 </head> 
 <body>
   <body>
@@ -36,46 +35,36 @@
                 <nav class="menuDesktop">
                     <ul>
                         <!-- <li><a href="#inicio">Início</a></li> -->
-                        <li><a href="#especialidades">Programação</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="postos.html">Postos</a></li>
-                        <li><a href="agendamento.html">Agendamento</a></li>
-                        <li style="margin-left: 60px;"><a href="postos.html">LOGIN</a></li>
+                        <!-- <li><a href="#especialidades">Programação</a></li> -->
+                        <!-- <li><a href="#sobre">Sobre</a></li> -->
+                        <!-- <li><a href="unidades.html">Postos</a></li> -->
+                        <!-- <li><a href="agendamento.html">Agendamento</a></li> -->
+                        <li style="margin-left: 60px;"><a href="login.html">LOGIN</a></li>
                     </ul>
                 </nav><!-- /. menuDesktop-->
             </div> <!-- /. interface -->
             <div class="container-menu" style="background-color: #94C536; text-align: center; ">
                 <div class="container">
                     <div class="row" id="font-setting-buttons" style="line-height: 35px; display: flex;">
-                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a href="#"
+                        <div class="clicavel" style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a href="#"
                                 id="altocontraste" onclick="window.toggleContrast()" style="cursor:pointer;" accesskey="2"
                                 title="Aplicar Contraste"><i class="bi bi-brilliance"></i> <span class="nomefora">
                                     Contraste</span></a></div>
-                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a
+                        <div class="clicavel" style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a
                                 class="nav-link increase-me btn-list-top" style="cursor:pointer; " accesskey="A"
                                 title="Aumentar texto"><i class="bi bi-border-all"></i> <span class="nomefora">
                                     Aumentar</span></a></div>
-                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a
+                        <div class="clicavel" style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a
                                 class="nav-link decrease-me btn-list-top" style="cursor:pointer; " accesskey="D"
                                 title="Diminuir texto"><i class="bi bi-dash-square"></i> <span class="nomefora">
                                     Diminuir</span></a></div>
-                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a
+                        <div class="clicavel" style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a
                                 href="/pesquisa.php"><i class="fa fa-search" title="Pesquisa avançada"></i> <span
-                                    class="nomefora">Pesquisa</span></a></div>
-                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a
-                                href="/acessibilidade.php" accesskey="1" title="Página de acessibilidade"><i
-                                    class="fa fa-smile-o"></i> <span class="nomefora">Acessibilidade</span></a></div>
-                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a
-                                style="cursor:pointer;" href="https://www.gov.br/governodigital/pt-br/vlibras"
-                                target="_blank" accesskey="M" title="VLibras"><i class="fa fa-hand-paper-o"></i> <span
-                                    class="nomefora"> Libras</span></a>
-                        </div>
-                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"> <a
-                                class="nav-link btn-list-top" href="/mapadosite.php" accesskey="M"><i class="fa fa-sitemap"
-                                    title="Mapa do site navegue"></i><span class="nomefora"> Mapa do site</span></a></div>
-                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"><a
-                                href="/acessoainformacao.php"><i class="fa fa-bars"></i> <span class="nomefora"
-                                    title="Transparência da entidade"> Transparência</span></a></div>
+                                    class="nomefora">Unidades</span></a></div>
+                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"></div>
+                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"></div>
+                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"></div>
+                        <div style="margin-bottom: 0px; padding-left:0; padding-right:0; flex: 1;"></div>
                     </div> <!-- /. row -->
                 </div> <!-- /. container -->
             </div> <!-- /. container-menu -->
@@ -146,5 +135,33 @@
             </div> <!-- /. interface -->
         </div> <!-- /. container -->
     </section> <!-- /. campanhas-eventos -->
+
+    <!-- -------------------------- -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=Primeiro Slide" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+        <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+        <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
+</div> <!-- /. carouselExampleIndicators -->
 </body>
 </html>
