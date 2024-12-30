@@ -152,7 +152,6 @@
     justify-content: center;
     align-items: center;
   }
-  
   section.topoSite .flex{
     gap: 90px;
   }
@@ -178,7 +177,6 @@
       color: #fff;
       transform: translateY(-4px);
   }
-  
   main .btnContato button:active{
     transform: translateY(-1px);
   }
@@ -188,17 +186,18 @@
     font-size: 40px;
     line-height: 40px;
   }
-  
   .topoSite h1 span{
     color: var(--spanAzul);
   }
-  
   .topoSite .txtTopoSite p {
     color: #000000;
     margin: 40px 0;
   }
   
   /* Estilização do topo da página - FIM */
+
+
+
 
   /* -------------------------------------- */
   /* Seção de Campanhas e Eventos */
@@ -228,22 +227,43 @@
   margin-bottom: 30px;
   transition: transform .2s;
 }
-
 .campanhas-eventos .card h3 {
   font-size: 24px;
   color: #333;
   padding: 15px;
 }
-
 .campanhas-eventos .card p {
   font-size: 16px;
   color: #666;
   padding: 0 15px 15px;
   line-height: 1.5;
 }
-
 .campanhas-eventos .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+
+
+/* ---------------------------------------------- */
+/* Seção - AÇÕES */
+
+section.acoes{
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+section.acoes .container,.interface{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+div#carouselExampleIndicators{
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
